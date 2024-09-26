@@ -1,5 +1,12 @@
 FROM dunglas/frankenphp
 
+RUN install-php-extensions \
+ pdo_pgsql \
+ gd \
+ intl \
+ zip \
+ opcache
+
 ENV SERVER_NAME=your-domain-name.example.com
 ENV APP_RUNTIME=Runtime\\FrankenPhpSymfony\\Runtime
 ENV APP_ENV=prod
