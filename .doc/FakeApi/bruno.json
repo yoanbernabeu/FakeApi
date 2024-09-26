@@ -1,0 +1,9 @@
+{
+  "version": "1",
+  "name": "FakeApi",
+  "type": "collection",
+  "ignore": [
+    "node_modules",
+    ".git"
+  ]
+}
